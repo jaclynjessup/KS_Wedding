@@ -1,0 +1,35 @@
+<div class="box box--mint">
+  <div class="row">
+    <div class="column small-12">
+      <h1>
+        <%= @event.partner_one %>
+        <span class="font--pacifico">&</span>
+        <%= @event.partner_two %>
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column small-12">
+    <h5>Get married on</h5>
+    <h3>
+      <%= @event.date %>
+    </h3>
+  </div>
+</div>
+
+<div class="inverted paralax" id="location" style="background-image: url(' http://www.clayhillfarm.com/Portals/1/Images/Galleries/4/6ab7f3c8-011b-4368-95eb-304f0fe03f41.jpg?width=800&height=600&mode=max');">
+  <div class="row">
+    <div class="column small-12">
+      <br/>
+      <br/>
+      <br/>
+      <h2>
+        <%= "at the beautiful #{@event.venue_name}" %>
+      </h2>
+      <h4>
+        <%= "in #{@event.venue_address_city}" %>
+      </h4>
+    </div>
+  </div>
+</div>
