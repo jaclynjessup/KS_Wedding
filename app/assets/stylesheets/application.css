@@ -18,14 +18,19 @@
 @import "foundation_and_overrides";
 
 .top-bar a {
-  color: white;
+  color: #320722;
 }
 
 .top-bar {
   font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.4;
-  color: white;
+  color: #320722 ;
+}
+
+.dropdown.menu {
+  position: relative;
+  padding-right: 1.5rem;
 }
 
 body {
@@ -36,22 +41,6 @@ body {
 h1 {
   font-family: Satisfy;
   font-size: 86px;
-}
-
-h2 {
-  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-}
-
-h3 {
-  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-}
-
-h4 {
-  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-}
-
-h5 {
-  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
 }
 
 .text--success {
