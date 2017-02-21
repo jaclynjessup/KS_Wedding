@@ -11,48 +11,18 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require_materialize
  *= require_self
- *= require foundation_and_overrides
 
  */
-@import "foundation_and_overrides";
 
-.top-bar a {
-  color: #320722;
-}
-
-.top-bar {
-  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #320722 ;
-}
-
-.dropdown.menu {
-  position: relative;
-  padding-right: 1.5rem;
-}
+ @import "materialize";
 
 body {
   background-color: #cccccc;
-  text-align: center;
 }
 
-h1 {
+h1, h2 {
   font-family: Satisfy;
   font-size: 86px;
-}
-
-
-#location {
-  position: relative;
-  background-size: cover;
-  background-position: center top;
-  height: 600px;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-  }
 }

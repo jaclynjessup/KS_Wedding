@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
+//= require materialize
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

@@ -10,39 +10,64 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
 
-<div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Katie & Shane</li>
-      <li>
-        <a href="#">About Us</a>
-        <ul class="menu vertical">
-          <li><a href="#">How We Met</a></li>
-          <li><a href="#">Our Proposal</a></li>
-        </ul>
-      </li>
-      <li><a href="#">I Do's, Dinner, & Dancing</a></li>
-      <li><a href="#">Guest Information</a></li>
-      <li><a href="#">Registry</a></li>
-    </ul>
-  </div>
-</div>
-
-
   <body>
-    <div class="row">
-      <div class="columns small-12">
-        <%= yield %>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
+    </nav>
+    <div>
+        <%= yield %>
+
+
+      <footer class="page-footer teal">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Company Bio</h5>
+              <p class="grey-text text-lighten-4">Text text text text text</p>
+
+
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Settings</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          Made by Jaclyn Moore. If you want to <a class="brown-text text-lighten-3" href="https://github.com/jaclynjessup/KS_Wedding">check it out</a>, it's open source and built with Ruby on Rails.
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
     </div>
   </body>
-
-  <div class="footer">
-    <p>This website was built by Jaclyn Moore. If you want to <a href"https://github.com/jaclynjessup/KS_Wedding">check it out</a>, it's open source
-      and built with Ruby on Rails.</p>
-  </div>
 </html>
