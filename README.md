@@ -1,24 +1,5 @@
-# README
+# KS_Wedding
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a wedding website created for two friends of mine who are getting married.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I decided to make this website for them in order to practice my web development skills. I choose to use the Materialize CSS for styling.
