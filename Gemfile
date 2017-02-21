@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'materialize-sass'
 gem 'material_icons'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'pry-rails'

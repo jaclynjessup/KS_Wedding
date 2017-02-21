@@ -13,16 +13,55 @@
  *= require_tree .
  *= require_materialize
  *= require_self
+ *= require font-awesome
 
  */
 
  @import "materialize";
+ @import "font-awesome";
 
 body {
   background-color: #cccccc;
 }
 
-h1, h2 {
+h1 {
+  font-family: Satisfy;
+  font-size: 120px;
+}
+
+h2 {
   font-family: Satisfy;
   font-size: 86px;
+}
+
+#heart {
+  color: #320722;
+}
+
+#icon {
+  color: #60234C;
+}
+
+#toast {
+  width:  200px;
+  height: 200px;
+}
+
+body {
+  color: #00203F;
+}
+
+#logo-container {
+  color: #00203F;
+  font-family: Satisfy;
+}
+
+#counter {
+  color: #00203F;
+  font-size: 24px;
+}
+
+#rings {
+  width:  35px;
+  height: 35px;
 }

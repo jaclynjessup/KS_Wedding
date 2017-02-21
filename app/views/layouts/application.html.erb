@@ -17,20 +17,15 @@
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
 
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="/" class="brand-logo">Our Wedding</a>
+    <ul class="right hide-on-med-and-down">
+      <li id="counter"><%= (@event.date - DateTime.now).to_i %> days till we say I DO <img src="assets/rings-icon.png" id="rings"></li>
+    </ul>
+  </div>
+</nav>
   <body>
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
     <div>
         <%= yield %>
 
