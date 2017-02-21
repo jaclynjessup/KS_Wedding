@@ -6,7 +6,9 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
-gem 'foundation-rails'
+gem 'materialize-sass'
+gem 'material_icons'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'pry-rails'

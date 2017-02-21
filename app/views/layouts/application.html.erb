@@ -10,39 +10,37 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
 
-<div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Katie & Shane</li>
-      <li>
-        <a href="#">About Us</a>
-        <ul class="menu vertical">
-          <li><a href="#">How We Met</a></li>
-          <li><a href="#">Our Proposal</a></li>
-        </ul>
-      </li>
-      <li><a href="#">I Do's, Dinner, & Dancing</a></li>
-      <li><a href="#">Guest Information</a></li>
-      <li><a href="#">Registry</a></li>
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="/" class="brand-logo">Our Wedding</a>
+    <ul class="right hide-on-med-and-down">
+      <li id="counter"><%= (@event.date - DateTime.now).to_i %> days till we say I DO <img src="assets/rings-icon.png" id="rings"></li>
     </ul>
   </div>
-</div>
-
-
+</nav>
   <body>
-    <div class="row">
-      <div class="columns small-12">
+    <div>
         <%= yield %>
-      </div>
+
+
+      <footer class="page-footer" id="page-footer">
+        <div class="footer-copyright" id="name-footer">
+          <div class="container">
+          Made by Jaclyn Moore. If you want to <a href="https://github.com/jaclynjessup/KS_Wedding">check it out</a>, it's open source and built with Ruby on Rails.
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
     </div>
   </body>
-
-  <div class="footer">
-    <p>This website was built by Jaclyn Moore. If you want to <a href"https://github.com/jaclynjessup/KS_Wedding">check it out</a>, it's open source
-      and built with Ruby on Rails.</p>
-  </div>
 </html>

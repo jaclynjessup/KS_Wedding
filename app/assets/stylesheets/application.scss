@@ -11,48 +11,65 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require_materialize
  *= require_self
- *= require foundation_and_overrides
+ *= require font-awesome
 
  */
-@import "foundation_and_overrides";
 
-.top-bar a {
-  color: #320722;
-}
-
-.top-bar {
-  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #320722 ;
-}
-
-.dropdown.menu {
-  position: relative;
-  padding-right: 1.5rem;
-}
+ @import "materialize";
+ @import "font-awesome";
 
 body {
   background-color: #cccccc;
-  text-align: center;
 }
 
 h1 {
   font-family: Satisfy;
+  font-size: 120px;
+}
+
+h2 {
+  font-family: Satisfy;
   font-size: 86px;
 }
 
+#heart {
+  color: #320722;
+}
 
-#location {
-  position: relative;
-  background-size: cover;
-  background-position: center top;
-  height: 600px;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-  }
+#icon {
+  color: #60234C;
+}
+
+#toast {
+  width:  200px;
+  height: 200px;
+}
+
+body {
+  color: #00203F;
+}
+
+#logo-container {
+  color: #00203F;
+  font-family: Satisfy;
+}
+
+#counter {
+  color: #00203F;
+  font-size: 24px;
+}
+
+#rings {
+  width:  35px;
+  height: 35px;
+}
+
+#page-footer {
+  background-color: #320722;
+}
+
+#name-footer {
+  background-color: #60234C;
 }
