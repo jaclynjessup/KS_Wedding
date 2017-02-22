@@ -14,8 +14,3 @@
 //= require jquery_ujs
 //= require materialize
 //= require_tree .
-
-$(document).ready(function(){
-  $('.slider').slider();
-});
-    

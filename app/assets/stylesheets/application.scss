@@ -13,12 +13,10 @@
  *= require_tree .
  *= require_materialize
  *= require_self
- *= require font-awesome
 
  */
 
  @import "materialize";
- @import "font-awesome";
 
 body {
   background-color: #cccccc;
