@@ -13,12 +13,10 @@
  *= require_tree .
  *= require_materialize
  *= require_self
- *= require font-awesome
 
  */
 
  @import "materialize";
- @import "font-awesome";
 
 body {
   background-color: #cccccc;
@@ -34,12 +32,9 @@ h2 {
   font-size: 86px;
 }
 
-#heart {
-  color: #320722;
-}
-
 #icon {
-  color: #60234C;
+  width:  100px;
+  height: 100px;
 }
 
 #toast {
